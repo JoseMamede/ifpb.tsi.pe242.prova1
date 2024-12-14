@@ -12,20 +12,26 @@ def q1():
 
 def q2():
     """
-    Dado um numeral romano, converta-o para um número inteiro.
+    não foi dessa vez
     """
-    user = input("")
-    romanos = [1,5,10,50,100,500,1000]
-    I,V,X,L,C,D,M = romanos
-    b = 0
-    for i in user:
-        b +=(romanos[i])
-    print(b)
+
 
 
 def q3():
     numb = int(input("Digite um número:"))
-    contador = 1
+    divisores = 0
+
+    for i in range(1,numb+1):
+        if numb % i == 0 and i % 3 == 0:
+            divisores += 1
+
+        
+    if divisores == 0:
+        print("O número não possui divisores multiplos de 3")
+    else:
+        print(f"Quantidade de divisores divisiveis por 3: {divisores}")
+
+
 
 
 
